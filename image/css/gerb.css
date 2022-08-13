@@ -1,0 +1,128 @@
+* {
+	margin: 0px ;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant SC', serif;
+    font-family: 'Gentium Book Plus', serif;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    background-color: #353534;
+}
+
+.h1 {
+    width: 100%;
+    min-height: 60px;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px 0px;
+    font-size: 23px;
+    background-color: #353534;
+    border: 4px solid #00ffc4;
+
+}
+
+.image-container {
+    width: 100%;
+    margin: auto;
+    padding: 20px 0px 0px 0px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.image {
+    border-radius: 10px;
+    margin: 10px 10px 10px 0px ;
+    overflow: hidden;
+    height: auto;
+    transition: .3s linear all;
+    
+    
+    
+}
+
+.image:hover img {
+    transform: scale(1.07);
+    transition: .3s linear all;
+}
+
+.image:hover{
+    transition: .3s linear all;
+    box-shadow: 0px 0px 10px 5px #00ffc4;
+}
+
+
+
+.image img {
+    display: block;
+    height: 220px;
+    margin: auto;
+    transition: .3s linear all;
+
+}
+
+h2 {
+    text-align: center;
+    padding: 10px 0px;
+    line-height: auto;
+}
+
+
+
+.container .popup-image {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0,.9 );
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+}
+
+.container .popup-image span {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.container .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px white;
+    object-fit: cover;
+    width: 750px;
+} 
+
+@media only screen and (max-width: 767px) {
+
+    .container .popup-image img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 4px white;
+        object-fit: cover;
+        width: 60%;
+    } 
+
+}
+
+
+
+

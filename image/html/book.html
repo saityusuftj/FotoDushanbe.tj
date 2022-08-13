@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/gerb.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Gentium+Book+Plus:ital@0;1&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@0;1&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+	
+	<title>Национальная Билиотека Таджикистана</title>
+</head>
+<body>		
+	<div class="container">
+
+		<div class="h1">Национальная Билиотека Республика Таджикистана </div>
+		<div class="image-container">
+			<div class="image">
+				<img src="../image/library/library_1.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_2.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_3.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_4.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_5.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_6.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_7.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_8.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_9.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_10.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_11.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_12.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_13.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_14.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_15.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_16.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_17.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_18.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_19.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_20.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_21.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_22.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_23.webp">
+			</div>
+			<div class="image">
+				<img src="../image/library/library_24.webp">
+			</div>
+
+
+
+
+			<div class="popup-image">
+				<span>&times</span>
+				<img src="../image/Love.webp">
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+		document.querySelectorAll('.image-container img').forEach(image => {
+			image.onclick = () => {
+				document.querySelector('.popup-image').style.display = 'block';
+				document.querySelector('.popup-image img').src = image.getAttribute('src');
+			}
+		});
+
+		document.querySelector('.popup-image span').onclick = () => {
+			document.querySelector('.popup-image').style.display = 'none';
+		}
+
+	</script>
+
+
+
+
+
+	<script type="text/javascript" src="../js/gerb.js"></script>
+</body>
+</html>
